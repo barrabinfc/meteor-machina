@@ -1,0 +1,9 @@
+{
+   "name": "Machina.js FSM",
+   "description": "Machina.js Finit State Machina",
+   "homepage": "http://http://machina-js.org/",
+   "author": "ifandelse",
+   "version": "0.3.6",
+   "git": "https://github.com/barrabinfc/meteor-machina"
+}
+
