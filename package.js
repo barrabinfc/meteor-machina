@@ -7,8 +7,7 @@ Npm.depends({
 });
 
 Package.on_use(function (api) {
-    api.add_files("machina.js", "server");
-    api.add_files("lib/machina/lib/machina.js", "client");
-
-    api.export('machina');
+    api.use('machina','client');
+    api.add_files(["machina.js"], "server");
+    api.add_files(["lib/machina/lib/machina.js"], "client");
 });
