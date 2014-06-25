@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Npm.depends({
-    'machina': '0.3.6'
+    'underscore': '1.5.2'
 });
 
 Package.on_use(function (api) {
