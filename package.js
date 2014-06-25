@@ -13,7 +13,7 @@ Package.on_use(function (api) {
     api.add_files([".npm/package/node_modules/machina/lib/machina.js"], ["client"]);
     api.add_files(["machina-server.js"],                                ["server"]);
 
-    api.export('machina')
+    api.export('machina',['server'])
 });
 
 Package.on_test(function(api){
