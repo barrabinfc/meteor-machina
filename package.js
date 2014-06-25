@@ -3,6 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+    api.use('underscore')
     api.add_files(["lib/machina/lib/machina.js"], ["client",'server']);
     api.export('machina')
 });
