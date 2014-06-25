@@ -4,13 +4,13 @@ Package.describe({
 
 Npm.depends({
     'underscore': '1.5.2'
-})
+});
 
 Package.on_use(function (api) {
     var _ = Npm.require("underscore");
 
     api.use(['underscore'],['client','server'])
-    api.add_files(["lib/machina/lib/machina.js"], ["client"]);
+    api.add_files(["lib/machina/lib/machina.js"], ["client",'server']);
     api.add_files(["machina.js"],                 ["server"]);
 
     api.export('machina')
