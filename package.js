@@ -12,8 +12,8 @@ Package.on_use(function (api) {
 
     api.use(['underscore'])
 
-    api.add_files([".npm/package/node_modules/machina/lib/machina/lib/machina.js"], ["client"]);
-    api.add_files(["machina-server.js"],                 ["server"]);
+    api.add_files([".npm/package/node_modules/machina/lib/machina.js"], ["client"]);
+    api.add_files(["machina-server.js"],                                ["server"]);
 
     api.export('machina','server')
 });
@@ -23,7 +23,7 @@ Package.on_test(function(api){
     api.use(['underscore'])
     api.use(['tinytest','test-helpers'])
 
-    //api.add_files(["lib/machina/lib/machina.js"], ["client"]);
-    //api.add_files(["machina.js"],                 ["server"]);
+    api.add_files([".npm/package/node_modules/machina/lib/machina.js"], ["client"]);
+    api.add_files(["machina-server.js"],                                ["server"]);
 
 });
