@@ -1,1 +1,2 @@
-var machina = Npm.require('machina')
+console.log(_)
+var machina = machina(_)
