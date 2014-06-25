@@ -8,8 +8,6 @@ Npm.depends({
 });
 
 Package.on_use(function (api) {
-    var _ = Npm.require("underscore");
-
     api.use(['underscore'])
 
     api.add_files([".npm/package/node_modules/machina/lib/machina.js"], ["client"]);

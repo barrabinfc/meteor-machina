@@ -4,9 +4,9 @@ Simple meteor package for machina.js Finite State Machine. You can use on both c
 
 ## Usage:
 
-A global variable `Machina` will be exported.
+A global variable `machina` will be exported.
 
-    var MyFSM = Machina.Fsm({
+    var MyFSM = new machina.Fsm({
         ...
     });
 
