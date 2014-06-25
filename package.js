@@ -18,5 +18,5 @@ Package.on_test(function(api){
     api.use(['tinytest','test-helpers'])
 
     api.add_files(["lib/machina/lib/machina.js"], ["client",'server']);
-    api.export('machina')
+
 });
