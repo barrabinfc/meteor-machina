@@ -3,7 +3,6 @@ Package.describe({
 });
 
 Npm.depends({
-    'underscore': '1.5.2',
     'machina': '0.3.6'
 });
 
@@ -13,7 +12,8 @@ Package.on_use(function (api) {
     api.add_files([".npm/package/node_modules/machina/lib/machina.js"], ["client"]);
     api.add_files(["machina-server.js"],                                ["server"]);
 
-    api.export('machina',['server'])
+    if(api.export)
+        api.export('machina','server')
 });
 
 Package.on_test(function(api){
